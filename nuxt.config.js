@@ -38,6 +38,13 @@ export default {
     }
   },
   vuetify: {
+    treeShake: {
+      loaderOptions: {
+        progressiveImages: {
+          sharp: true
+        }
+      }
+    },
     theme: {
       dark: true,
       themes: {
