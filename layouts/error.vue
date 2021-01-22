@@ -16,19 +16,19 @@
           color="blue darken-2"
         )
           v-icon(left) mdi-home
-          | 'Home'
+          | Home
         v-spacer
         v-btn(
           @click="reload"
           color="blue darken-2"
           v-if="error.statusCode !== 404"
-        ) 'Reload'
+        ) Reload
           v-icon(right) mdi-update
         v-btn(
           @click="$router.go(-1)"
           color="blue darken-2"
           v-else
-        ) 'Back'
+        ) Back
           v-icon(right) mdi-undo-variant
 </template>
 
