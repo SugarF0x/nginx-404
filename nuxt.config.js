@@ -4,8 +4,8 @@ export default {
   ssr: false,
   target: 'static',
   head: {
-    titleTemplate: '%s - nginx-404',
-    title: 'nginx-404',
+    titleTemplate: 'Page not found',
+    title: 'Page not found',
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/sgfx_line.webp' }
     ]
   },
   css: [
