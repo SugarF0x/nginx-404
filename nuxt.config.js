@@ -28,6 +28,15 @@ export default {
     '@nuxtjs/vuetify',
   ],
   modules: [],
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'wildcard',
+        path: '*',
+        component: resolve(__dirname, 'pages/index.vue')
+      })
+    }
+  },
   vuetify: {
     theme: {
       dark: true,
