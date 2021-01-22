@@ -11,6 +11,11 @@
       lg="7"
     )
       div.text-center.headline This isn't the page you are looking for
+      div.text-center.headline(v-if="$router.currentRoute.path === '/'") This page does not exist
+      div.text-center.headline(v-else)
+        | Page
+        code.mx-2 {{ $router.currentRoute.path }}
+        | does not exist
       v-img(
         :src="require('~/assets/img/fox.png')"
         aspect-ratio="1"
